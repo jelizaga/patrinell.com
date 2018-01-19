@@ -4,7 +4,11 @@ This is the website for *Patrinell: The Untold Story of the Total Experience Gos
 
 ## Dependencies
 
-jekyll, bundler, gcc, make, ruby, gem.
+jekyll, bundler, gcc, make, ruby, gem. If on an Ubuntu derivative:
+
+`sudo apt install ruby ruby-dev gcc make gem`
+
+`sudo gem install jekyll bundler`
 
 ## Using Jekyll
 
