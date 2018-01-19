@@ -1,0 +1,28 @@
+---
+layout: page
+title: "Screenings"
+---
+<main>
+
+	<div class="content">
+
+		<h1>
+			Screenings
+		</h1>
+
+		{% for post in site.tags.screening %}
+			<a href="{{post.url}}">
+			    <div class="post-item">
+			    	<img src="{{site.baseurl}}/img/post/{{post.img}}">
+			    	<h3>
+			    		{{post.title}}
+			    	</h3>
+			    	<p class="post-date">{{post.date | date: "%B %-d, %Y"}}</p>
+			    	<p>{{post.excerpt}}</p>
+			    </div>
+			</a>
+		{% endfor %}
+
+	</div>
+
+</main>

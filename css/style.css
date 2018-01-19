@@ -1,0 +1,1085 @@
+/*
+	Houses the styling of the entire web site. Test your changes before pushing them; a misplaced
+	semi-colon can break the sheet. - Joel
+*/
+
+/* GLOBAL */
+
+@font-face {
+	font-family: "Georgia";
+	src: url("../font/georgia.ttf");
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url("../font/lato-regular.ttf");
+}
+
+@font-face {
+	font-family: "Lato Bold";
+	src: url("../font/lato-bold.ttf");
+}
+
+@font-face {
+	font-family: "Cardo";
+	src: url("../font/cardo-regular.ttf");
+}
+
+@font-face {
+	font-family: "Cardo Italic";
+	src: url("../font/cardo-italic.ttf");
+}
+
+@keyframes fade-in {
+    from {
+    	opacity: 0;
+    }
+    to {
+    	opacity: 1;
+    }
+}
+
+
+body {
+	margin: 0;
+	background-color: #444;
+	font-family: "Lato", sans-serif;
+}
+
+p {
+	font-size: 14pt;
+	line-height: 22pt;
+}
+
+b {
+	font-family: "Lato Bold", sans-serif;
+	font-weight: normal;
+}
+
+ul {
+	font-size: 14pt;
+	line-height: 22pt;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: #ff2e00;
+}
+
+img {
+	width: 100%;
+}
+
+.article-c-img {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.svg-link {
+	color: #000;
+	transition: color, 0.3s;
+	font-size: 50pt;
+}
+
+.svg-link:hover {
+	color: #ff2e00;
+}
+
+.columns {
+	column-count: 2;
+}
+
+.col {
+	display: inline-block;
+	width: 48%;
+}
+
+.col iframe {
+	width: 100%;
+	margin: 0;
+}
+
+/* TITLES */
+
+h1 {
+	text-align: center;
+	margin: 0;
+	font-size: 30pt;
+	margin-bottom: 40px;
+}
+
+h3 {
+	margin-bottom: 3px;
+	font-family: "Georgia", serif;
+	font-size: 15pt;
+	margin-top: 0;
+}
+
+.title-img {
+	width: 33vw;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	animation: fade-in 5s ease;
+}
+
+.subtitle {
+	text-align: center;
+	font-style: italic;
+	font-size: 14pt;
+	font-weight: normal;
+}
+
+.post-item .subtitle {
+	font-size: 12pt;
+	font-style: italic;
+}
+
+.title-with-subtitle {
+	margin-bottom: 0;
+}
+
+/* LINK LISTS */
+
+.link-list li {
+	list-style-image: url("../img/bullet/link-bullet.png");
+	list-style-position: inside;
+}
+
+.subtitle {
+	
+}
+
+.date {
+	font-size: smaller;
+	margin-top: 3px;
+	font-style: italic;
+}
+
+.content div {
+	overflow: hidden;
+}
+
+
+/* NAVIGATION */
+
+nav {
+	font-family: "Georgia", serif;
+	color: white;
+	font-size: 14pt;
+	background-color: #000;
+	padding: 20px;
+	letter-spacing: 1px;
+}
+
+#nav-center {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+nav ul li {
+	display: inline;
+	padding: 20px;
+	cursor: pointer;
+	transition: color, 0.3s;
+	text-shadow: 1px 1px #000000;
+}
+
+nav ul li a {
+	color: #FFF;
+	text-decoration: none;
+	cursor: pointer;
+	transition: color, 0.3s;
+	text-shadow: 1px 1px #000000;
+	outline: none;
+}
+
+nav ul a:hover {
+	color: #ff2e00;
+}
+
+nav ul li:hover {
+	color: #ff2e00;
+}
+
+/* MAIN */
+
+main {
+	width: 100%;
+	margin: 0;
+	margin-top: -3px;
+	padding: 0;
+	/*
+	padding-top: 40px;
+	padding-bottom: 40px;*/
+	background-color: #FFF;
+}
+
+.index-main h1 {
+	background-color: #000;
+	color: #FFF;
+	font-family: "Georgia", serif;
+	margin: 0;
+	padding: 20px;
+}
+
+.content {
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	overflow: hidden;
+}
+
+/* INDEX VIDEO */
+
+#index-head {
+	width: 100%;
+	height: 56vw;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#index-video {
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	width: 1200px;
+	height: 675px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	margin-top: 40px;
+}
+
+#index-title-container {
+	position: absolute;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height: 33%;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#index-title-container p {
+	font-family: "Georgia", serif;
+	font-weight: normal;
+	color: #fff;
+	text-shadow: 2px 2px 0px #000; 
+	text-align: center;
+	font-size: 16pt;
+	animation: fade-in 5s ease;
+}
+
+#index-title {
+	color: #FFF;
+	text-shadow: 1px 1px 2px #111;
+	font-family: "Cardo", serif;
+	font-weight: normal;
+	letter-spacing: 7px;
+	font-size: 110pt;
+	animation: fade-in 5s ease;
+}
+
+#index-subtitle {
+	color: #FFF;
+	text-align: center;
+	text-shadow: 1px 1px 2px #111;
+	font-family: "Georgia", serif;
+	font-weight: normal;
+	font-size: 20pt;
+	animation: fade-in 5s ease;
+	position: relative;
+	bottom: 40px;
+}
+
+.ambient-bg {
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	/*filter: brightness(20%);*/
+}
+
+/* INDEX COPY */
+
+#index-copy {
+	font-family: "Georgia", sans-serif;
+	font-size: 16pt;
+	color: #000;
+	background-color: #FFF;
+}
+
+#index-copy p {
+	font-size: 14pt;
+	line-height: 40px;	
+}
+
+/* ARTICLE FORMATTING */
+
+.article-r-img {
+	float: right;
+	margin-left: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	max-width: 30vw;
+}
+
+.article-l-img {
+	float: left;
+	margin-right: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	max-width: 30vw;
+}
+
+.article-r-img img, .article-l-img img {
+	max-width: 30vw;
+}
+
+.article-r-img p, .article-l-img p {
+	font-size: 12pt;
+	font-style: italic;
+}
+
+/* POST ITEMS */
+
+.post-item {
+	display: block;
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	color: #000;
+	padding: 20px;
+	transition: color background-color, 0.3s;
+}
+
+.post-item h3 {
+	font-size: 20pt;
+	transition: color, 0.3s;
+	color: #ff2e00;
+}
+
+.post-item .post-date {
+	font-size: 12pt;
+	margin-top: 5px;
+	font-style: italic;
+}
+
+.post-item img {
+	width: 30%;
+	float: right;
+	margin-left: 20px;
+}
+
+.post-item:hover {
+	background-color: #ff2e00;
+	color: #fff;
+}
+
+.post-item:hover h3 {
+	color: #fff;
+}
+
+/* INTERVIEW DIVS */
+
+#interview-div-collection {
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 40px;
+}
+
+.interview-div {
+	width: 80vw;
+	margin: 1vw;
+	display: inline-block;
+	padding: 0;
+	transition: width 0.3s;
+}
+
+.interview-div-head {
+	position: absolute;
+	width: 100%;
+	padding: 30px;
+	bottom: 0;
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0);
+	transition: background-color 0.3s;
+}
+
+.interview-div:hover .interview-div-head {
+	background-color: #ff2e00;
+}
+
+.interview-div-head .int-title {
+	font-family: "Georgia", serif;
+	color: #FFF;
+	text-shadow: 1px 2px 0px #000;
+	margin: 0;
+	font-size: 17pt;
+}
+
+.interview-div-head .int-subtitle {
+	font-family: "Georgia", serif;
+	color: #FFF;
+	text-shadow: 1px 2px 0px #000;
+	margin: 0;
+	font-size: 12pt;
+}
+
+.interview-div-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.interview-div-desc {
+	position: absolute;
+	width: 100%;
+	padding: 30px;
+	background-color: #111;
+	color: #FFF;
+	left: 0;
+	right: 0;
+	bottom: -10%;
+	transition: bottom 0.3s, background-color 0.3s;
+} 
+
+.interview-div img {
+	width: 100%;
+}
+
+.benny {
+	color: blue;
+}
+
+.pat {
+	color: red;
+}
+
+
+/*
+#interview-menu {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+
+#interview-menu h1 {
+	background-color: #111;
+	color: #FFF;
+	font-family: "Georgia", serif;
+	margin: 0;
+	padding: 20px;
+}
+
+#interview-menu a {
+	margin: 0;
+	outline: 0;
+}
+
+.interview-item {
+	display: inline-block;
+	width: 20%;
+	margin: 0;
+	padding: 0;
+}
+
+.interview-item-head {
+	background-color: red;
+	float: top;
+	color: #FFF;
+	padding: 15px;
+	text-shadow: 1px 1px #000000;
+	font-family: "Georgia", serif;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 14pt;
+	text-align: center;
+	transition: background-color, 0.3s;
+}
+
+.interview-item-portrait {
+	width: 100%;
+	padding-top: 133%;
+	position: relative;
+}
+
+.interview-item-portrait img {
+	width: 100%;
+	height: 100%;
+	filter: grayscale(0%);
+	z-index: -1;
+	transition: filter, 0.3s;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+.interview-item-desc {
+	position: absolute;
+	background-color: #ff4848;
+	color: #FFF;
+	padding: 25px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	height: 40px;
+	opacity: 0;
+	margin-left: auto;
+	margin-right: auto;
+	transition: opacity, 0.3s;
+	font-size: 12pt;
+	text-shadow: 1px 1px #000000;
+}
+
+.interview-item:hover .interview-item-portrait img {
+	filter: grayscale(0%);
+}
+
+
+.interview-item:hover .interview-item-desc {
+	opacity: 1;
+}
+
+.interview-item:hover .interview-item-head {
+	background-color: #ff4848;
+}
+
+.interview-row {
+	margin: 20px;
+}
+*/
+
+/* INTERVIEWS */
+
+.interview-headshot-r, .interview-headshot-l, .headshot-l {
+	height: 25vw;
+	width: 25vw;
+}
+
+.interview-headshot-r {
+	float: right;
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+
+.interview-headshot-l, .headshot-l {
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+.headshot-l {
+	border-radius: 50%;
+}
+
+/* FOOTER */
+
+footer {
+	background-color: #000;
+	text-align: center;
+	width: 100%;
+	padding: 40px;
+	color: #FFF;
+	box-sizing: border-box;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+/* 1350+ SCREENS ---------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1350px) {
+
+	p {
+		font-size: 14pt;
+		line-height: 22pt;
+	}
+
+	b {
+		font-family: "Lato Bold", sans-serif;
+		font-weight: normal;
+	}
+
+	a {
+		outline: none;
+		text-decoration: none;
+	}
+
+	h1 {
+		text-align: center;
+		margin: 0;
+		font-size: 30pt;
+		margin-bottom: 40px;
+	}
+
+	.subtitle {
+		text-align: center;
+		font-style: italic;
+		font-size: 14pt;
+		font-weight: normal;
+	}
+
+	h3 {
+		margin-bottom: 3px;
+		font-family: "Georgia", serif;
+		font-size: 15pt;
+		margin-top: 0;
+	}
+
+	.date {
+		font-size: smaller;
+		margin-top: 3px;
+		font-style: italic;
+	}
+
+	.content div {
+		overflow: hidden;
+	}
+
+
+	/* NAVIGATION */
+
+	nav {
+		font-family: "Georgia", serif;
+		color: white;
+		font-size: 14pt;
+		background-color: #000;
+		padding: 20px;
+		letter-spacing: 1px;
+	}
+
+	#nav-center {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+
+	nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin-left: auto;
+		margin-right: auto;
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+	}
+
+	nav ul li {
+		display: inline;
+		padding: 20px;
+		cursor: pointer;
+		transition: color, 0.3s;
+		text-shadow: 1px 1px #000000;
+	}
+
+	nav ul li a {
+		color: #FFF;
+		text-decoration: none;
+		cursor: pointer;
+		transition: color, 0.3s;
+		text-shadow: 1px 1px #000000;
+		outline: none;
+	}
+
+	nav ul a:hover {
+		color: #ff4848;
+	}
+
+	nav ul li:hover {
+		color: #ff4848;
+	}
+
+	/* MAIN */
+
+	main {
+		width: 100%;
+		margin: 0;
+		margin-top: -3px;
+		padding: 0;
+		/*
+		padding-top: 40px;
+		padding-bottom: 40px;*/
+		background-color: #FFF;
+	}
+
+	.index-main h1 {
+		background-color: #000;
+		color: #FFF;
+		font-family: "Georgia", serif;
+		margin: 0;
+		padding: 20px;
+	}
+
+	.content {
+		width: 75vw;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		overflow: hidden;
+	}
+
+	/* INDEX VIDEO */
+
+	#index-head {
+		width: 100%;
+		height: 56vw;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: hidden;
+	}
+
+	#index-video {
+		background-color: rgba(0, 0, 0, 0.5);
+		display: none;
+		width: 1200px;
+		height: 675px;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+		margin-top: 40px;
+	}
+
+	#index-title-container {
+		position: absolute;
+		display: block;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		height: 33%;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#index-title {
+		color: #FFF;
+		text-shadow: 1px 1px 2px #111;
+		font-family: "Cardo", serif;
+		font-weight: normal;
+		letter-spacing: 7px;
+		font-size: 110pt;
+		animation: fade-in 5s ease;
+	}
+
+	#index-subtitle {
+		color: #FFF;
+		text-align: center;
+		text-shadow: 1px 1px 2px #111;
+		font-family: "Georgia", serif;
+		font-weight: normal;
+		font-size: 20pt;
+		animation: fade-in 5s ease;
+		position: relative;
+		bottom: 40px;
+	}
+
+	.ambient-bg {
+		z-index: -1;
+		position: absolute;
+		width: 100%;
+		height: auto;
+		/*filter: brightness(20%);*/
+	}
+
+	/* INDEX COPY */
+
+	#index-copy {
+		font-family: "Georgia", sans-serif;
+		font-size: 16pt;
+		color: #000;
+		background-color: #FFF;
+	}
+
+	#index-copy p {
+		font-size: 14pt;
+		line-height: 40px;	
+	}
+
+	/* ARTICLE FORMATTING */
+
+	.article-r-img {
+		float: right;
+		margin-left: 40px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		max-width: 25vw;
+	}
+
+	.article-l-img {
+		float: left;
+		margin-right: 40px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		max-width: 25vw;
+	}
+
+	.article-r-img img, .article-l-img img {
+		max-width: 25vw;
+	}
+
+	.article-r-img p, .article-l-img p {
+		font-size: 12pt;
+		font-style: italic;
+	}
+
+	/* POST ITEMS */
+
+	.post-item {
+		display: block;
+		width: 75vw;
+		margin-left: auto;
+		margin-right: auto;
+		box-sizing: border-box;
+	}
+
+	.post-item h3 {
+		font-size: 20pt;
+	}
+
+	/* INTERVIEW DIVS */
+
+	#interview-div-collection {
+		width: 75vw;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 40px;
+	}
+
+	.interview-div {
+		width: 35.5vw;
+		margin: 1vw;
+		display: inline-block;
+		padding: 0;
+		transition: width 0.3s;
+	}
+
+	.interview-div-head {
+		position: absolute;
+		width: 100%;
+		padding: 20px;
+		bottom: 0;
+		box-sizing: border-box;
+		transition: background-color 0.3s;
+	}
+
+	.interview-div-head .int-title {
+		font-family: "Georgia", serif;
+		color: #FFF;
+		text-shadow: 1px 1px 0px #000;
+		margin: 0;
+		font-size: 17pt;
+	}
+
+	.interview-div-head .int-subtitle {
+		font-family: "Georgia", serif;
+		color: #FFF;
+		text-shadow: 1px 1px 0px #000;
+		margin: 0;
+		font-size: 12pt;
+	}
+
+	.interview-div-container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+
+	.interview-div-desc {
+		position: absolute;
+		width: 100%;
+		padding: 30px;
+		background-color: #111;
+		color: #FFF;
+		left: 0;
+		right: 0;
+		bottom: -10%;
+		transition: bottom 0.3s, background-color 0.3s;
+	} 
+
+	.interview-div img {
+		width: 100%;
+	}
+
+	.benny {
+		color: blue;
+	}
+
+	.pat {
+		color: red;
+	}
+
+
+	/*
+	#interview-menu {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0;
+	}
+
+	#interview-menu h1 {
+		background-color: #111;
+		color: #FFF;
+		font-family: "Georgia", serif;
+		margin: 0;
+		padding: 20px;
+	}
+
+	#interview-menu a {
+		margin: 0;
+		outline: 0;
+	}
+
+	.interview-item {
+		display: inline-block;
+		width: 20%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.interview-item-head {
+		background-color: red;
+		float: top;
+		color: #FFF;
+		padding: 15px;
+		text-shadow: 1px 1px #000000;
+		font-family: "Georgia", serif;
+		text-decoration: none;
+		font-weight: normal;
+		font-size: 14pt;
+		text-align: center;
+		transition: background-color, 0.3s;
+	}
+
+	.interview-item-portrait {
+		width: 100%;
+		padding-top: 133%;
+		position: relative;
+	}
+
+	.interview-item-portrait img {
+		width: 100%;
+		height: 100%;
+		filter: grayscale(0%);
+		z-index: -1;
+		transition: filter, 0.3s;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+	}
+
+	.interview-item-desc {
+		position: absolute;
+		background-color: #ff4848;
+		color: #FFF;
+		padding: 25px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: block;
+		height: 40px;
+		opacity: 0;
+		margin-left: auto;
+		margin-right: auto;
+		transition: opacity, 0.3s;
+		font-size: 12pt;
+		text-shadow: 1px 1px #000000;
+	}
+
+	.interview-item:hover .interview-item-portrait img {
+		filter: grayscale(0%);
+	}
+
+
+	.interview-item:hover .interview-item-desc {
+		opacity: 1;
+	}
+
+	.interview-item:hover .interview-item-head {
+		background-color: #ff4848;
+	}
+
+	.interview-row {
+		margin: 20px;
+	}
+	*/
+
+	/* INTERVIEWS */
+
+	.interview-headshot-r, .interview-headshot-l, .headshot-l {
+		height: 20vw;
+		width: 20vw;
+	}
+
+	.interview-headshot-r {
+		float: right;
+		margin-left: 40px;
+		margin-bottom: 40px;
+	}
+
+	.interview-headshot-l, .headshot-l {
+		float: left;
+		margin-right: 40px;
+		margin-bottom: 40px;
+	}
+
+	.headshot-l {
+		border-radius: 50%;
+	}
+
+	/* FOOTER */
+
+	footer {
+		background-color: #000;
+		text-align: center;
+		width: 100%;
+		padding: 40px;
+		color: #FFF;
+		box-sizing: border-box;
+	}
+}
