@@ -398,7 +398,7 @@ main {
 .post-item img {
 	width: 30%;
 	float: right;
-	margin-left: 20px;
+	margin: 20px;
 }
 
 .post-item:hover {
